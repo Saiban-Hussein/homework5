@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,40 +13,126 @@
 </head>
 
 <body>
-  <div style="page-break-after: always">
-    <table style="margin-top:10px; padding: 20px;border-color: #0c0c0c;width: 100%"></table>
-    <div style="width: 100%; display: -webkit-box; display: flex; -webkit-box-pack: center; justify-content: center;">
-      <div
-        style="width: 79%; height: 500px; background-color: red; position: relative;  -webkit-box-flex: 2; -webkit-flex: 2; flex: 2;">
-
-      </div> <!-- Timeblocks go here -->
-      <div
-        style="width: 19%; height: 500px; background-color: blue; position: relative;  -webkit-box-flex: 1; -webkit-flex: 1; flex: 1;">
-
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+    <button type="button" class="btn btn-outline-success" id="clearDay">Clear Day!</button>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour">09:00 am </span>
+        </div>
+        <textarea class="form-control" aria-label="With textarea" id="9am"></textarea>
+        <button type="button" class="saveBtn"><i class="fas fa-cloud-upload-alt"></i></button>
       </div>
     </div>
-  </div>
-  <script>
-    console.log('uhhhhhhh 1')
-  </script>
-  <div style="page-break-after: always">
-    <table style="margin-top:10px; padding: 20px;border-color: #0c0c0c;width: 100%"></table>
-    <div style="width: 100%; display: -webkit-box; display: flex; -webkit-box-pack: center; justify-content: center;">
-      <div
-        style="width: 79%; height: 500px; background-color: red; position: relative;  -webkit-box-flex: 2; -webkit-flex: 2; flex: 2;">
-
-      </div> <!-- Timeblocks go here -->
-      <div
-        style="width: 19%; height: 500px; background-color: blue; position: relative;  -webkit-box-flex: 1; -webkit-flex: 1; flex: 1;">
-
+    
+    <div class="row">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour">10:00 am </span>
+        </div>
+        <textarea class="form-control" aria-label="With textarea" id="10am"></textarea>
+        <button type="button" class="saveBtn"><i class="fas fa-cloud-upload-alt"></i></button>
       </div>
     </div>
+    
+    <div class="row">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour">11:00 am </span>
+        </div>
+        <textarea class="form-control" aria-label="With textarea" id="11am"></textarea>
+        <button type="button" class="saveBtn"><i class="fas fa-cloud-upload-alt"></i></button>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour">12:00 pm </span>
+        </div>
+        <textarea class="form-control" aria-label="With textarea" id="12pm"></textarea>
+        <button type="button" class="saveBtn"><i class="fas fa-cloud-upload-alt"></i></button>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour">01:00 pm </span>
+        </div>
+        <textarea class="form-control" aria-label="With textarea" id="13pm"></textarea>
+        <button type="button" class="saveBtn"><i class="fas fa-cloud-upload-alt"></i></button>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour">02:00 pm </span>
+        </div>
+        <textarea class="form-control" aria-label="With textarea" id="14pm"></textarea>
+        <button type="button" class="saveBtn"><i class="fas fa-cloud-upload-alt"></i></button>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour">03:00 pm </span>
+        </div>
+        <textarea class="form-control" aria-label="With textarea" id="15pm"></textarea>
+        <button type="button" class="saveBtn"><i class="fas fa-cloud-upload-alt"></i></button>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour">04:00 pm </span>
+        </div>
+        <textarea class="form-control" aria-label="With textarea" id="16pm"></textarea>
+        <button type="button" class="saveBtn"><i class="fas fa-cloud-upload-alt"></i></button>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour">05:00 pm </span>
+        </div>
+        <textarea class="form-control" aria-label="With textarea" id="17pm"></textarea>
+        <button type="button" class="saveBtn"><i class="fas fa-cloud-upload-alt"></i></button>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour">06:00 pm </span>
+        </div>
+        <textarea class="form-control" aria-label="With textarea" id="18pm"></textarea>
+        <button type="button" class="saveBtn"><i class="fas fa-cloud-upload-alt"></i></button>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour">07:00 pm </span>
+        </div>
+        <textarea class="form-control" aria-label="With textarea" id="19pm"></textarea>
+        <button type="button" class="saveBtn"><i class="fas fa-cloud-upload-alt"></i></button>
+      </div>
+    </div>
+
   </div>
-  <!-- <script>
-    console.log('HIIIIII 2')
-  </script>
- -->
- <script src="script.js"></script>
+
+  <script src="script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   
